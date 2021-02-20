@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <title> Customer Information </title>
+<link rel="stylesheet" href="CustomerInformationStyleJava.css">
+<script>
+function validateForm()
+{
+  var fname=document.forms["MyForm"]["fname"].value;
+  if (fname == "")
+        {
+	alert("Please provide users first name!");
+	return false;
+	    }
+  var lname=document.forms["MyForm"]["lname"].value;
+  if (lname == "")
+        {
+	alert("Please provide users last name!");
+	return false;
+	    }
+  var email=document.forms["MyForm"]["email"].value;
+  if (email == "")
+        {
+	alert("Please provide users email address!");
+	return false;
+	    }
+  else alert ("Thank you for filling out this form!");
+  
+ }</script>
+</head>
+<body>
+<form>
+
+<div style="border:3px solid black; text-align:center; width:30%">
+<h1><u>Customer Information</u></h1>
+<h2>Please enter the following information into the fields below. Click <i><u>submit</u></i> to save the information.
+<br>
+</br>
+<form name="MyForm" action="/action_page.php" onsubmit="return validateForm()"
+ method="post">
+<label="fname">First Name:</label>
+<input type="text" 
+
+		id="fname" name="fname" size=30px>
+<br></br>
+
+<label="lname">Last Name:</label>
+<input type="text" 
+
+		id="lname" name="lname" size=30px>
+<br></br>
+
+<label="email">E-mail:</label>
+<input type="text" 
+
+	id="email" name="email" size=35px>
+<br></br>
+
+
+<div class="button">
+<button type="button" onclick="alert('Submission successful. Thank you for your information!')">
+Submit</button>
+</div>
+<br></br>
+<hr></hr>
+<p><b>Note: all data is recorded anonymously to maintain privacy.</b></p>
+</div>
+</form>
+</h2>
+</body>
+</html> 
