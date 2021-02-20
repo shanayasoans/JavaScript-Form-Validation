@@ -1,0 +1,26 @@
+body
+{
+	background-color: lightpink;
+}
+
+h1 
+{
+	color: purple; margin-left: 20px;
+}
+h2
+{
+	font-size:14px
+}
+p
+{
+  font-size:12px; text-align:center;
+}
+label {
+	padding-top: 20px;
+	font-family: verdana;
+}
+
+button 
+{	
+  position: center; 
+}
